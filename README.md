@@ -39,8 +39,8 @@ git clone https://github.com/hotspoon/project_1
 cd project_1
 2. Create a virtual environment:
 
-3. python3 -m venv devEnv
-Activate the virtual environment:
+python3 -m venv devEnv
+3. Activate the virtual environment:
 
 - On Windows:
 .\devEnv\Scripts\activate
