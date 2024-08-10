@@ -37,6 +37,7 @@ Ensure you have the following installed:
 
 git clone https://github.com/hotspoon/project_1
 cd project_1
+
 2. Create a virtual environment:
 
 python3 -m venv devEnv
