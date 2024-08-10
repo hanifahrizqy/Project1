@@ -11,7 +11,7 @@ Proyek ini, yang dikembangkan oleh tim Data Divers, adalah pipeline ETL (Extract
 ## Fitur Utama
 - Ekstraksi Data: Menghubungkan ke database produksi marketplace untuk mengekstrak data yang relevan.
 - Transformasi Data: Memproses dan mengubah data yang diekstrak agar sesuai dengan skema data warehouse.
-- Pemuatan Data: Memuat data yang telah diubah ke dalam data warehouse, khususnya ke dalam tabel dim_orders_faris.
+- Pemuatan Data: Memuat data yang telah diubah ke dalam data warehouse, khususnya ke dalam tabel ```dim_orders_faris```.
 - Otomatisasi: Seluruh proses ETL diotomatisasi dan dapat dijalankan dengan satu skrip.
 ## Komponen
 - main.py: Skrip utama yang mengatur proses ETL.
@@ -34,25 +34,33 @@ Ensure you have the following installed:
 - pip (Python package installer)
 ## Installation
 1. Clone the repository:
-
+```
 git clone https://github.com/hotspoon/project_1
 cd project_1
-
+```
 2. Create a virtual environment:
-
+```
 python3 -m venv devEnv
+```
 3. Activate the virtual environment:
 
 - On Windows:
+```
 .\devEnv\Scripts\activate
+```
 - On macOS/Linux:
+```
 source devEnv/bin/activate
+```
 4. Install the required packages:
-
+```
 pip install -r requirements.txt
+```
 # Configuration
-Update the [config.json] file with your database credentials if necessary.
+Update the [```config.json```] file with your database credentials if necessary.
 # Running the ETL Process
 Run the ETL script:
+```
 python main.py
+```
 This will connect to the data source and data warehouse, execute the queries, and ingest the data into the data warehouse.
